@@ -1,0 +1,9 @@
+{
+  "name": "engkids-tinybee",
+  "version": "2.0.0",
+  "description": "TinyBee - Ứng dụng học tiếng Anh vui nhộn cho bé",
+  "scripts": {
+    "dev": "npx -y serve . -l 3456 --no-clipboard",
+    "start": "npx -y serve . -l 3456 --no-clipboard"
+  }
+}

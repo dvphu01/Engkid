@@ -1,0 +1,42 @@
+/* ===================================
+   EngKids - Base Styles
+   =================================== */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { font-size: 16px; -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-normal);
+  color: var(--color-gray-800);
+  background: var(--gradient-primary);
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+button { font-family: var(--font-family); cursor: pointer; border: none; outline: none; background: none; font-weight: var(--font-weight-bold); -webkit-tap-highlight-color: transparent; }
+input, select, textarea { font-family: var(--font-family); border: none; outline: none; }
+a { text-decoration: none; color: inherit; }
+ul, ol { list-style: none; }
+
+#app { position: relative; width: 100%; max-width: var(--container-max); min-height: 100vh; margin: 0 auto; overflow: hidden; }
+
+.screen { position: absolute; top: 0; left: 0; width: 100%; min-height: 100vh; display: flex; flex-direction: column; opacity: 0; visibility: hidden; transition: opacity var(--transition-normal), transform var(--transition-normal); transform: translateX(20px); }
+.screen.active { position: relative; opacity: 1; visibility: visible; transform: translateX(0); }
+
+h1 { font-size: var(--font-size-3xl); font-weight: var(--font-weight-black); line-height: var(--line-height-tight); }
+h2 { font-size: var(--font-size-2xl); font-weight: var(--font-weight-extrabold); line-height: var(--line-height-tight); }
+h3 { font-size: var(--font-size-xl); font-weight: var(--font-weight-bold); }
+h4 { font-size: var(--font-size-lg); font-weight: var(--font-weight-bold); }
+p { font-size: var(--font-size-base); color: var(--color-gray-500); }
+
+.text-gradient { background: var(--gradient-fun); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--color-primary-light); border-radius: var(--radius-full); }
+::selection { background: var(--color-primary-light); color: var(--color-white); }
